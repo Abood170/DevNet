@@ -1,0 +1,131 @@
+Build a complete, real, working web application called "DevNet".
+
+This is NOT a demo application.
+All features must work end-to-end with real users, real data, and real permissions.
+However, the implementation must be lightweight and optimized for low resource usage.
+Avoid unnecessary background jobs, heavy real-time features, or over-engineering.
+
+=====================================
+TECH STACK (MUST FOLLOW)
+=====================================
+Frontend: React.js
+Backend: Express.js (Node.js)
+Database: PostgreSQL
+Language: TypeScript preferred
+Architecture: REST API (framework-agnostic design)
+
+=====================================
+SYSTEM OBJECTIVES
+=====================================
+- Provide a realistic developer networking platform
+- Allow users to publish, edit, and delete content normally
+- Ensure dashboards are functional and reflect real data
+- Ensure all buttons and actions perform real operations
+- Keep the system simple, stable, and efficient
+
+=====================================
+AUTHENTICATION & USERS
+=====================================
+- Implement real authentication (email + password)
+- Persist users in the database
+- Use a minimal authentication approach (simple JWT or sessions)
+- Passwords must be hashed (bcrypt)
+- User roles:
+  - Developer
+  - Employer
+  - Admin
+- Enforce role-based access control (RBAC) on the backend
+
+=====================================
+CORE FUNCTIONAL FEATURES (ALL MUST WORK)
+=====================================
+
+1) User Accounts
+- Register
+- Login
+- Logout
+- Edit profile
+
+2) Developer Capabilities
+- Create posts
+- Edit own posts
+- Delete own posts
+- View feed with posts from other users
+
+3) Employer Capabilities
+- Create job posts
+- Edit and delete own job posts
+- View jobs dashboard
+
+4) Admin Capabilities
+- Admin dashboard
+- View all users
+- View all posts and jobs
+- Delete any post or job
+- Disable user accounts
+
+5) Content Management
+- Posts and Jobs must support full CRUD:
+  Create, Read, Update, Delete
+
+=====================================
+DASHBOARDS (REAL & FUNCTIONAL)
+=====================================
+- Developer Dashboard:
+  - My posts
+  - Profile summary
+- Employer Dashboard:
+  - My job listings
+- Admin Dashboard:
+  - Users list
+  - Posts list
+  - Jobs list
+
+=====================================
+NON-FUNCTIONAL REQUIREMENTS
+=====================================
+- Pagination for posts and jobs
+- Optimized database queries
+- No unnecessary polling or background workers
+- Clean, minimal UI
+- Responsive layout
+- Accessibility-friendly (semantic HTML, keyboard navigation)
+
+=====================================
+BACKEND STRUCTURE REQUIREMENTS
+=====================================
+- Clean folder structure:
+  - routes/
+  - controllers/
+  - services/
+  - models/
+- Thin route handlers
+- Business logic inside services
+- Centralized error handling
+- Unified JSON response format
+
+=====================================
+FRONTEND REQUIREMENTS
+=====================================
+- Centralized API configuration (single base URL file)
+- Protected routes based on user role
+- Real forms for create/edit actions
+- Proper success and error feedback for all actions
+
+=====================================
+DOCUMENTATION
+=====================================
+- API.md or OpenAPI specification
+- README with:
+  - Setup instructions
+  - How to run the app
+  - Role permissions explanation
+
+=====================================
+IMPORTANT CONSTRAINTS
+=====================================
+- Do NOT mock data
+- Do NOT disable features
+- Do NOT label the system as demo
+- Keep implementation simple and resource-efficient
+- Focus on correctness and real functionality over scale
